@@ -1,0 +1,20 @@
+[package]
+name = "remote-runner-server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+axum = "0.8.4"
+base16ct = { version = "0.2.0", features = ["alloc"] }
+base64ct = { version = "1.7.3", features = ["alloc"] }
+clap = { version = "4.5.39", features = ["derive"] }
+env_logger = "0.11.8"
+log = "0.4.27"
+md-5 = "0.10.6"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+subprocess = "0.2.9"
+tokio = { version = "1.45.1", features = ["macros", "rt-multi-thread"] }
+tower-http = "0.6.4"
+uuid = { version = "1.17.0", features = ["v4"] }
